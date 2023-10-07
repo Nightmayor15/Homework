@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Семинар 2">
+      <UniqueIdentifier>{3b2496b3-8453-4fcf-82d0-2b11958ab170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Семинар 3">
+      <UniqueIdentifier>{a84115a2-6662-43de-8106-b431f08712a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Семинар 4">
+      <UniqueIdentifier>{a0eb8969-5dc8-4ae7-ba83-99f70ea37b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Семинар 5">
+      <UniqueIdentifier>{771f4e83-2022-4ecc-b013-3cfe934e31ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Семинар 6">
+      <UniqueIdentifier>{422c8dc2-e83e-41d1-9e8a-0b7171ec2e24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ConsoleApplication1\Семинар 2\2 Семинар.cpp">
+      <Filter>Семинар 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ConsoleApplication1\Семинар 2\Array.cpp">
+      <Filter>Семинар 2</Filter>
+    </ClCompile>
+    <ClCompile Include="3 Семинар.cpp">
+      <Filter>Семинар 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Solve.cpp">
+      <Filter>Семинар 3</Filter>
+    </ClCompile>
+    <ClCompile Include="4 Семинар.cpp">
+      <Filter>Семинар 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Семинар 4</Filter>
+    </ClCompile>
+    <ClCompile Include="Nature.cpp">
+      <Filter>Семинар 5</Filter>
+    </ClCompile>
+    <ClCompile Include="Семинар 5.cpp">
+      <Filter>Семинар 5</Filter>
+    </ClCompile>
+    <ClCompile Include="Весь семестр.cpp" />
+    <ClCompile Include="Семинар 6.cpp">
+      <Filter>Семинар 6</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes.cpp">
+      <Filter>Семинар 6</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ConsoleApplication1\Семинар 2\Array.h">
+      <Filter>Семинар 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Solve.h">
+      <Filter>Семинар 3</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Семинар 4</Filter>
+    </ClInclude>
+    <ClInclude Include="Nature.h">
+      <Filter>Семинар 5</Filter>
+    </ClInclude>
+    <ClInclude Include="Весь семестр.h" />
+    <ClInclude Include="Shapes.h">
+      <Filter>Семинар 6</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
