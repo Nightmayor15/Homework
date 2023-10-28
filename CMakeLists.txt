@@ -16,5 +16,6 @@ add_executable (Sem3 "sem3/3 Семинар.cpp" "sem3/Solve.cpp")
 add_executable (Sem4 "sem4/4 Семинар.cpp" "sem4/Functions.cpp")
 add_executable (Sem5 "sem5/Семинар 5.cpp" "sem5/Nature.cpp")
 add_executable (Sem6 "sem6/Семинар 6.cpp" "sem6/Shapes.cpp")
+add_executable (Sem7 "sem7/Семинар 7.cpp")
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
