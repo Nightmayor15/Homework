@@ -1,11 +1,13 @@
 #pragma once
 #include <iostream>
 
+/// @brief Элемент дерева
+/// @tparam 
 template <typename T>
 struct Node
 {
-	std::string key;
-	T data;
+	std::string key; //Ключ
+	T data; //Значение
 	Node* left = nullptr;
 	Node* right = nullptr;
 	void del();
@@ -13,8 +15,10 @@ struct Node
 	Node* search(std::string key);
 };
 
+/// @brief Двоичное дерево, его корень
+/// @tparam 
 template <typename T>
-class BinTree
+class BinTree 
 {
 	Node<T>* root = nullptr;
 	//void push(std::string key, std::string data);
@@ -25,7 +29,8 @@ public:
 
 };
 
-
+/// @brief Удаление потомков элемента
+/// @tparam 
 template <typename T>
 void Node<T>::del()
 {
@@ -41,6 +46,8 @@ void Node<T>::del()
 	}
 }
 
+/// @brief Деструктор
+/// @tparam
 template <typename T>
 BinTree<T>::~BinTree()
 {
@@ -51,6 +58,10 @@ BinTree<T>::~BinTree()
 	}
 }
 
+/// @brief Поиск по дереву по ключу
+/// @tparam 
+/// @param key Ключ (строка)
+/// @return Указатель на элемент дерева
 template <typename T>
 Node<T>* BinTree<T>::search(std::string key)
 {
@@ -68,6 +79,10 @@ Node<T>* BinTree<T>::search(std::string key)
 
 }
 
+/// @brief Поиск по элементу дерева и по его потомкам
+/// @tparam 
+/// @param keyy Ключ (строка)
+/// @return Указатель на элемент дерева
 template <typename T>
 Node<T>* Node<T>::search(std::string keyy)
 {
@@ -99,6 +114,9 @@ Node<T>* Node<T>::search(std::string keyy)
 	}
 }
 
+/// @brief Присоединение элемента к дереву (к элементу)
+/// @tparam 
+/// @param n Указатель на присоединяемый элемент
 template <typename T>
 void Node<T>::attach(Node<T>* n)
 {
@@ -130,6 +148,10 @@ void Node<T>::attach(Node<T>* n)
 	else root->attach(n);
 }*/
 
+/// @brief Вывод элемента по его ключу (или создание элемента)
+/// @tparam
+/// @param key Ключ (строка)
+/// @return Информацию элемента списка
 template <typename T>
 T& BinTree<T>::operator[](std::string key)
 {

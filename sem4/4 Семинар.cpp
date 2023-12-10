@@ -14,16 +14,17 @@ int main()
 	{
 		Vectors a = p;
 		Vectors b = q;
-		std::cout << "1 - Найти модули векторов\n" << "2 - Найти противоположные векторы\n" << "3 - Сложить векторы\n" << "3 - Вычесть вектор q из вектора p\n" << "4 - Найти скалярное произведение векторов\n";
-		std::cout << "5 - Найти векторное произведение векторов [p x q]\n" << "6 - Умножить векторы на скаляр n\n" << "0 - Завершить\n";
-		int k; std::cin >> k;
+		std::cout << "1 - Найти модули векторов\n" << "2 - Найти противоположные векторы\n" << "3 - Сложить векторы\n" << "4 - Вычесть вектор q из вектора p\n" << "5 - Найти скалярное произведение векторов\n";
+		std::cout << "6 - Найти векторное произведение векторов [p x q]\n" << "7 - Умножить векторы на скаляр n\n" << "0 - Завершить\n";
+		int k; std::cin >> k; //Номер операции
 		if (k == 0) break;
 		else if (k == 1) std::cout << a.abs() << " " << b.abs() << std::endl;
 		else if (k == 2) std::cout << ( - a) << " " << ( - b) << std::endl;
 		else if (k == 3) std::cout << (a + b) << std::endl;
-		else if (k == 4) std::cout << (a * b) << std::endl;
-		else if (k == 5) std::cout << (a ^ b) << std::endl;
-		else if (k == 6)
+		else if (k == 4) std::cout << (a - b) << std::endl;
+		else if (k == 5) std::cout << (a * b) << std::endl;
+		else if (k == 6) std::cout << (a ^ b) << std::endl;
+		else if (k == 7)
 		{
 			std::cout << "Введите скаляр n\n";
 			double n;

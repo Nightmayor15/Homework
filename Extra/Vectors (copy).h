@@ -33,13 +33,13 @@ class Vector
     };
 
 public:
-    ~Vector();
+    //~Vector();
     Vector();
     void append(T a);
     T pop();
     /// @brief Длина списка
     /// @return Длина списка (int)
-    int len() {return pointer}
+    int len() {return pointer;};
     T &operator[](int);
     void Vector::sort(bool key(T, T) = nullptr);
     void Vector::clear();
@@ -60,6 +60,7 @@ Vector<T>::Vector()
     pointer = 0;
 }
 
+/*
 /// @brief Деструктор списка
 /// @tparam
 template <typename T>
@@ -67,6 +68,7 @@ Vector<T>::~Vector()
 {
     delete[] data;
 }
+*/
 
 /// @brief Расширение списка
 /// @tparam

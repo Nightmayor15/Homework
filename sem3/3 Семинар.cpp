@@ -1,14 +1,15 @@
 #include <iostream>
 #include "Solve.h"
 
+ 
 int main()
 {
-	int NUM;
+	int NUM; //Выбор программы пользователем (1 - Связный список, 2 - Обратная польская запись)
 	std::cin >> NUM;
 	if (NUM == 1)
 	{
 		LinkedList* L = new LinkedList;
-		std::string k;
+		std::string k; //Выбор операции пользователем
 		while (k != "End")
 		{
 			std::cout << "<Push>, <Pop> or <End>?" << std::endl;
@@ -28,8 +29,8 @@ int main()
 	}
 	if (NUM == 2)
 	{
-		LinkedList_s L = Polska();
-		LinkedList_s P;
+		LinkedList_s L = Polska(); //Стек для обратной польской записи
+		LinkedList_s P; //Стек для "переворачивания" предыдущего стека, чтобы запись была в нужном порядке
 		while (L.root != nullptr)
 		{
 			P.push(L.pop());

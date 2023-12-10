@@ -25,9 +25,9 @@ int main()
 
 int main()
 {
-	BinTree<int> Dict;
-	Dict["Russia"] = 1;
+	BinTree<int> Dict; //Создание дерева
+	Dict["Russia"] = 1; //Присвоение ему значений
 	Dict["USA"] = 2;
-	std::cout << Dict["Russia"] << Dict["USA"];
+	std::cout << Dict["Russia"] << Dict["USA"]; //Вывод значений из дерева
 
 }

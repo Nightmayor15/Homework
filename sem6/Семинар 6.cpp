@@ -56,16 +56,16 @@ int main()
 
 int main() 
 {
-	Shape* data[3];
-	data[0] = new Triangle(3, 4, 5);
-	data[1] = new Rectangle(6, 8);
-	data[2] = new Circle(5);
+	Shape* data[3]; //Массив фигур
+	data[0] = new Triangle(3, 4, 5); //Треугольник
+	data[1] = new Rectangle(6, 8); //Прямоугольник
+	data[2] = new Circle(5); //Круг
 
-	for (int i = 0; i < 3; ++i) {
+	for (int i = 0; i < 3; ++i) { //Вывод всех фигур
 		std::cout << data[i] << std::endl;
 	}
-	double res = 0;
-	for (int i = 0; i < 3; ++i) {
+	double res = 0; //Переменная для вычисления площади фигур
+	for (int i = 0; i < 3; ++i) { //Вычисление суммарной площади фигур
 		res = res + data[i]->area();
 	}
 	std::cout << "sum area is " << res << std::endl;

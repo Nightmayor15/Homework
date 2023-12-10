@@ -10,8 +10,8 @@ public:
 	double& Im();
 
 	double abs();
-	Complex(double Re, double Im = 0);  //Конструктор, название совпадает с названием класса
-	Complex() { a = 0; b = 0; }; //Конструктор по умолчанию
+	Complex(double Re, double Im = 0);  //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	Complex() { a = 0; b = 0; }; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	Complex operator+(Complex other);
 	Complex operator-(Complex other);
@@ -29,16 +29,16 @@ public:
 std::ostream& operator<<(std::ostream& stream, Complex z);
 */
 
-
+/// @brief РљР»Р°СЃСЃ РІРµРєС‚РѕСЂР° РІ РµРІРєР»РёРґРѕРІРѕРј РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРµ
 class Vectors
 {
 public:
-	double x;
-	double y;
-	double z;
+	double x; //РљРѕРѕСЂРґРёРЅР°С‚Р° x
+	double y; //РљРѕРѕСЂРґРёРЅР°С‚Р° y
+	double z; //РљРѕРѕСЂРґРёРЅР°С‚Р° z
 
-	Vectors(double a = 0, double b = 0, double c = 0);
-	friend std::ostream& operator<<(std::ostream& stream, Vectors p);
+	Vectors(double a = 0, double b = 0, double c = 0); 
+	friend std::ostream& operator<<(std::ostream& stream, Vectors p); 
 	
 	Vectors operator-();
 	double abs();
@@ -46,14 +46,12 @@ public:
 	Vectors operator+(Vectors other);
 	Vectors operator-(Vectors other);
 	double operator*(Vectors other);
+	Vectors operator*(double n);
 	Vectors operator^(Vectors other);
-	friend Vectors operator*(double n, Vectors p);
-	friend Vectors operator*(Vectors p, double n);
-	
+	friend Vectors operator*(double n, Vectors p);	
 
 };
 
 std::ostream& operator<<(std::ostream& stream, Vectors p);
 
 Vectors operator*(double n, Vectors p);
-Vectors operator*(Vectors p, double n);
