@@ -19,6 +19,6 @@ add_executable (Sem5 "sem5/Семинар 5.cpp" "sem5/Nature.cpp")
 add_executable (Sem6 "sem6/Семинар 6.cpp" "sem6/Shapes.cpp")
 add_executable (Sem7 "sem7/Семинар 7.cpp")
 add_executable (Sem10 "sem10/Семинар 10.cpp")
-//add_executable (Extra_Task "Extra/Extra task.cpp")
+add_executable (Extra_Task "Extra/Extra task.cpp")
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
